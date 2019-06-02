@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/mainback"
+    tools:context=".AboutActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/HeaderText"
+            android:layout_width="195dp"
+            android:layout_height="97dp"
+            android:layout_above="@+id/HeaderText11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-216dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="IOT Based Door Unlocking System"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/HeaderText11"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"
+        android:gravity="center"
+        android:text="Version 1.0.0"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="107dp"
+        android:layout_height="97dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/HeaderText1"
+        android:layout_width="97dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/imageView2"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+
+        android:text="© 2018-2019" />
+
+    <TextView
+        android:id="@+id/HeaderText1111"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Designed|Developed By Shashank Patel" />
+
+
+</LinearLayout>
+</RelativeLayout>
