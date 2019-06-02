@@ -7,20 +7,16 @@ import picamera
 from fractions import Fraction
 import time
 import datetime
-config ={
-    "apiKey": "AIzaSyB36ZzOR77egxe7iUWkR9DC6-jZDEplNqI",
-    "authDomain": "smartdoorfinal-a7750.firebaseapp.com",
-    "databaseURL": "https://smartdoorfinal-a7750.firebaseio.com",
-    "projectId": "smartdoorfinal-a7750",
-    "storageBucket": "smartdoorfinal-a7750.appspot.com",
-    "messagingSenderId": "1008216095743"
+config ={   # Copy config details from your firebase account
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": ""
   };
-
-
 GPIO.setmode(GPIO.BCM)
-
 GPIO.setup(25, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
 try: 
   while True:
     press = GPIO.input(25)
@@ -33,15 +29,13 @@ try:
                 finaldate=enddate-startdate
                 camera.resolution = (360,240) #set resolution of picture here
                 camera.brightness = 60 #set brightness settings to help with dark photos
-                
                 camera.saturation = -30
                 camera.annotate_foreground = picamera.Color(y=0.2, u=0, v=0) #set color of annotation 
                 camera.start_preview()
                 camera.annotate_text = 'Get Ready!'
                 time.sleep(1)
                 camera.annotate_text = ''
-                for i, filename in enumerate(camera.capture_continuous('image{counter:02d}.jpg')):
-    
+                for i, filename in enumerate(camera.capture_continuous('image{counter:02d}.jpg')):    
                     if i == 1:
                         camera.annotate_text = ''
                     elif i == 2:
@@ -69,7 +63,6 @@ try:
                     if i == 13:
                         break
                 camera.stop_preview() #stop preview
-
             os.system('convert -delay 30 image*.jpg animation.gif') #send command to convert images to GIF
             print("done"); #let us know photo is about to start uploading
             
