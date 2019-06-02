@@ -33,9 +33,13 @@ Put the microSD card in your Pi and boot up
 Apache & PHP
 ===========
 sudo apt-get update
+
 sudo apt-get install apache2 -y
+
 sudo apt-get install php libapache2-mod-php -y
+
 sudo rm index.html //Remove index.html file
+
 sudo leafpad index.php  //Create index.php file
 
 Test Web Server
