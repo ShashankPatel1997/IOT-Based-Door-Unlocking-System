@@ -45,3 +45,7 @@ sudo leafpad index.php  //Create index.php file
 Test Web Server
 ==============
 http://localhost/ or http://192.168.1.10 (whatever the Pi's IP address is)
+
+Video Link
+===========
+https://drive.google.com/file/d/1-6yvX_FHhISnEQYHFQGhtkl9OxrurznH/view?usp=drivesdk
